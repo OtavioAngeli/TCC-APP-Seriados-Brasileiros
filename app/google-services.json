@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "430369214067",
+    "firebase_url": "https://tcc-seriadosbrasileiros.firebaseio.com",
+    "project_id": "tcc-seriadosbrasileiros",
+    "storage_bucket": "tcc-seriadosbrasileiros.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430369214067:android:cfb3b59d274e7555",
+        "android_client_info": {
+          "package_name": "uniandrade.br.edu.com.seriadosbrasileiros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430369214067-8dkfnicr6tr8ead88nnmvbnis12okovr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uniandrade.br.edu.com.seriadosbrasileiros",
+            "certificate_hash": "56719dea6f6a293364863d0b7e099677db2095f3"
+          }
+        },
+        {
+          "client_id": "430369214067-qn6259ev43gaf4d73l21h20hp1rn553t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoYzcsX7OaQUl2Ch4oFMeq7SOR4ktqB5Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430369214067-qn6259ev43gaf4d73l21h20hp1rn553t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
