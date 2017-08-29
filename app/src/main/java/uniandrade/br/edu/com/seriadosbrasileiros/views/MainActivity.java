@@ -1,8 +1,10 @@
-package uniandrade.br.edu.com.seriadosbrasileiros;
+package uniandrade.br.edu.com.seriadosbrasileiros.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +17,10 @@ import android.view.MenuItem;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import uniandrade.br.edu.com.seriadosbrasileiros.R;
+import uniandrade.br.edu.com.seriadosbrasileiros.views.fragments.FavoritosFragment;
+import uniandrade.br.edu.com.seriadosbrasileiros.views.fragments.SeriesFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -36,6 +42,9 @@ public class MainActivity extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.content_main, new SeriesFragment()).commit();
 
         //referenciaBanco.child("score").setValue("250");
 
@@ -47,6 +56,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -87,10 +97,14 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
+        if (id == R.id.nav_series) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.content_main, new SeriesFragment()).commit();
+        } else if (id == R.id.nav_favorito) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.content_main, new FavoritosFragment()).commit();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
