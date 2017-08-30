@@ -1,4 +1,4 @@
-package uniandrade.br.edu.com.seriadosbrasileiros.views.fragments;
+package uniandrade.br.edu.com.seriadosbrasileiros.fragments;
 
 
 import android.os.Bundle;

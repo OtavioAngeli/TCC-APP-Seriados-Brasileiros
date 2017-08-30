@@ -1,10 +1,8 @@
 package uniandrade.br.edu.com.seriadosbrasileiros.views;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,12 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 import uniandrade.br.edu.com.seriadosbrasileiros.R;
-import uniandrade.br.edu.com.seriadosbrasileiros.views.fragments.FavoritosFragment;
-import uniandrade.br.edu.com.seriadosbrasileiros.views.fragments.SeriesFragment;
+import uniandrade.br.edu.com.seriadosbrasileiros.fragments.FavoritosFragment;
+import uniandrade.br.edu.com.seriadosbrasileiros.fragments.SeriesFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

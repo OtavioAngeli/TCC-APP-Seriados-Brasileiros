@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="uniandrade.br.edu.com.seriadosbrasileiros.views.fragments.SeriesFragment">
+    tools:context=".fragments.SeriesFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txtSerie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lista de Seriados Brasileiros"
