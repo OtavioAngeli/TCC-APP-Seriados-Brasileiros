@@ -60,21 +60,18 @@ public class SeriesFragment extends Fragment {
                 if (response.isSuccessful()){
                     SeriesResults results = response.body();
                     List<SeriesResults.ItemsBean> listOfSeries = results.getItems();
-                    SeriesResults.ItemsBean resultSerie = listOfSeries.get(1);
-                    txtSerie.setText(resultSerie.getName());
+                    SeriesResults.ItemsBean resultSerie = listOfSeries.get(0);
+                    txtSerie.setText(resultSerie.getTitle());
                 }else {
                     txtSerie.setText("Erro");
                 }
 
             }
-
             @Override
             public void onFailure(Call<SeriesResults> call, Throwable t) {
                 t.printStackTrace();
             }
         });
-
-
         return view;
     }
 }
