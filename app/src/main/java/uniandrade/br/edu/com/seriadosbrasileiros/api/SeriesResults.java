@@ -1,4 +1,4 @@
-package uniandrade.br.edu.com.seriadosbrasileiros;
+package uniandrade.br.edu.com.seriadosbrasileiros.api;
 
 import java.util.List;
 
