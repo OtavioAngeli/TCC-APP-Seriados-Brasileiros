@@ -93,10 +93,12 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_series) {
+            setTitle("Seriados Brasileiros");
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.content_main, new SeriesFragment()).commit();
         } else if (id == R.id.nav_favorito) {
+            setTitle("Favoritos");
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.content_main, new FavoritosFragment()).commit();

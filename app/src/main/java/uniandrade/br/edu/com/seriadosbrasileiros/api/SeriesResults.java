@@ -161,7 +161,7 @@ public class SeriesResults {
         }
 
         public String getPoster_path() {
-            return poster_path;
+            return "http://image.tmdb.org/t/p/w500" + poster_path;
         }
 
         public void setPoster_path(String poster_path) {
@@ -193,7 +193,7 @@ public class SeriesResults {
         }
 
         public String getBackdrop_path() {
-            return backdrop_path;
+            return "http://image.tmdb.org/t/p/w500" + backdrop_path;
         }
 
         public void setBackdrop_path(String backdrop_path) {

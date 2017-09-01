@@ -40,13 +40,13 @@ public class SeriesFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_series, container, false);
 
         recyclerView = view.findViewById(R.id.recyclerView);
-        listaSerieAdapter = new ListaSerieAdapter();
+        listaSerieAdapter = new ListaSerieAdapter(getContext());
         recyclerView.setAdapter(listaSerieAdapter);
         recyclerView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
@@ -69,7 +69,6 @@ public class SeriesFragment extends Fragment {
                     List<SeriesResults.ItemsBean> listSeries = results.getItems();
 
                     listaSerieAdapter.adicionarListaSeries(listSeries);
-
                 }else {
 
                 }
