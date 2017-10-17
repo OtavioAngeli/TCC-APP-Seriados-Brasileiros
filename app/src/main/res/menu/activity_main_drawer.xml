@@ -7,12 +7,8 @@
             android:icon="@drawable/ic_menu_live_tv_black"
             android:title="Séries" />
         <item
-            android:id="@+id/nav_favorito"
-            android:icon="@drawable/ic_menu_favorite"
-            android:title="Favoritos" />
-        <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_contacts"
+            android:icon="@drawable/ic_menu_amigos"
             android:title="Amigos" />
         <item
             android:id="@+id/nav_manage"
@@ -26,6 +22,10 @@
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_settings"
                 android:title="Configurações" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_help"
+                android:title="Ajuda"/>
             <item
                 android:id="@+id/nav_about"
                 android:icon="@drawable/ic_menu_info"

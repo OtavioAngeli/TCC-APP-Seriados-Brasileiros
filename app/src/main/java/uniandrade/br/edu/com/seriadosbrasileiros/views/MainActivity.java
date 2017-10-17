@@ -1,5 +1,6 @@
 package uniandrade.br.edu.com.seriadosbrasileiros.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import uniandrade.br.edu.com.seriadosbrasileiros.R;
 import uniandrade.br.edu.com.seriadosbrasileiros.fragments.FavoritosFragment;
@@ -72,7 +74,10 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent intent = new Intent(this, ActivityLogin.class);
+            startActivity(intent);
+
+            Toast.makeText(this, "Tela Login", Toast.LENGTH_SHORT).show();
         }
 
         return super.onOptionsItemSelected(item);
@@ -89,11 +94,6 @@ public class MainActivity extends AppCompatActivity
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.content_main, new SeriesFragment()).commit();
-        } else if (id == R.id.nav_favorito) {
-            setTitle("Favoritos");
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.content_main, new FavoritosFragment()).commit();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {

@@ -1,6 +1,7 @@
 package uniandrade.br.edu.com.seriadosbrasileiros.adapter;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,9 +39,14 @@ public class ListaSerieAdapter extends RecyclerView.Adapter<ListaSerieAdapter.Vi
     @Override
     public void onBindViewHolder(ListaSerieAdapter.ViewHolder holder, int position) {
         SeriesResults.ItemsBean seriesResults = mSerieList.get(position);
-        Picasso.with(mContext)
-                .load(seriesResults.getPoster_path())
-                .into(holder.imgCapaSerie);
+        if (seriesResults.getPoster_path().isEmpty()){
+            //holder.imgCapaSerie.setImageResource();
+        } else {
+            Picasso.with(mContext)
+                    .load(seriesResults.getPoster_path())
+                    .into(holder.imgCapaSerie);
+        }
+
         holder.txtNomeSerie.setText(seriesResults.getName());
         if (seriesResults.getFirst_air_date().equals("")){
             holder.txtReleaseDate.setText("Release Date: Desconhecido" );
