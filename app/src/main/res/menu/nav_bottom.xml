@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_favorito1"
+        android:icon="@drawable/ic_menu_live_tv_black"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_favorito2"
+        android:icon="@drawable/ic_navbar_star_black"
+        android:title="Favoritos" />
+
+    <item
+        android:id="@+id/nav_favorito3"
+        android:icon="@drawable/ic_navbar_check_black"
+        android:title="Assistidos" />
+
+    <item
+        android:id="@+id/nav_favorito4"
+        android:icon="@drawable/ic_navbar_schedule_black"
+        android:title="Futuro" />
+
+</menu>
