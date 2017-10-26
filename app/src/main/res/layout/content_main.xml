@@ -23,6 +23,7 @@
     </android.support.constraint.ConstraintLayout>
 
     <android.support.design.widget.BottomNavigationView
+        android:id="@+id/menu_nav_bottom"
         app:menu="@menu/nav_bottom"
         android:background="@android:color/white"
         android:layout_width="368dp"
